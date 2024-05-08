@@ -88,7 +88,7 @@ sources:
           - name: impression
           - name: click
 
-      - name: facebokk
+      - name: facebook
         identifier: raw_gz_facebook
         description: facebook ads
         columns:
