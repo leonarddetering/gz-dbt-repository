@@ -49,3 +49,53 @@ sources:
             description: logistic costs per order
           - name: ship_cost
             description: costs of shipping per order for greenweez
+
+
+      - name: google
+        identifier: raw_gz_adwords
+        description: google ads
+        columns:
+          - name: date_date
+          - name: paid_source
+          - name: campaign_key
+          - name: camPGN_name
+          - name: ads_cost
+          - name: impression
+          - name: click
+
+      - name: bing
+        identifier: raw_gz_bing
+        description: bing ads
+        columns:
+          - name: date_date
+          - name: paid_source
+          - name: campaign_key
+          - name: camPGN_name
+          - name: ads_cost
+          - name: impression
+          - name: click
+
+
+      - name: criteo
+        identifier: raw_gz_criteo
+        description: criteo ads
+        columns:
+          - name: date_date
+          - name: paid_source
+          - name: campaign_key
+          - name: camPGN_name
+          - name: ads_cost
+          - name: impression
+          - name: click
+
+      - name: facebokk
+        identifier: raw_gz_facebook
+        description: facebook ads
+        columns:
+          - name: date_date
+          - name: paid_source
+          - name: campaign_key
+          - name: camPGN_name
+          - name: ads_cost
+          - name: impression
+          - name: click          
