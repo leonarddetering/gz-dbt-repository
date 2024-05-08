@@ -39,3 +39,5 @@ models:
   dbt_ldetering:
     mart:
       +materialized: table
+      finance:
+        +schema: finance
