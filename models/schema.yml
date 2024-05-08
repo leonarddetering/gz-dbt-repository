@@ -62,6 +62,9 @@ sources:
           - name: ads_cost
           - name: impression
           - name: click
+        tests:
+          -   unique:
+                column_name: "(campaign_key || '-' || date_date)"
 
       - name: bing
         identifier: raw_gz_bing
@@ -74,6 +77,11 @@ sources:
           - name: ads_cost
           - name: impression
           - name: click
+        tests:
+          -   unique:
+                column_name: "(campaign_key || '-' || date_date)"
+
+          
 
 
       - name: criteo
@@ -87,6 +95,9 @@ sources:
           - name: ads_cost
           - name: impression
           - name: click
+        tests:
+          -   unique:
+                column_name: "(campaign_key || '-' || date_date)"
 
       - name: facebook
         identifier: raw_gz_facebook
@@ -98,4 +109,7 @@ sources:
           - name: camPGN_name
           - name: ads_cost
           - name: impression
-          - name: click          
+          - name: click 
+        tests:
+          -   unique:
+                column_name: "(campaign_key || '-' || date_date)"         
